@@ -9,8 +9,8 @@ window.onload = function()
     opposite = 5;
     writeToConsole(`angle = ${rad2deg(anglerad)}°<br />`);
     writeToConsole(`opposite = ${opposite}<br />`);
-    hypotenuse = opposite / Math.sin(anglerad);
-    adjacent = opposite / Math.tan(anglerad);
+    hypotenuse = opposite / math.sin(anglerad);
+    adjacent = opposite / math.tan(anglerad);
     writeToConsole(`hypotenuse = ${opposite}/sin(${rad2deg(anglerad)}) = ${hypotenuse}<br />`);
     writeToConsole(`adjacent = ${opposite}/tan(${rad2deg(anglerad)}) = ${adjacent}<br /><br />`);
 
@@ -18,8 +18,8 @@ window.onload = function()
     adjacent = 8.66;
     writeToConsole(`angle = ${rad2deg(anglerad)}°<br />`);
     writeToConsole(`adjacent = ${adjacent}<br />`);
-    hypotenuse = adjacent / Math.cos(anglerad);
-    opposite = adjacent * Math.tan(anglerad);
+    hypotenuse = adjacent / math.cos(anglerad);
+    opposite = adjacent * math.tan(anglerad);
     writeToConsole(`hypotenuse = ${adjacent}/cos(${rad2deg(anglerad)}) = ${hypotenuse}<br />`);
     writeToConsole(`opposite = ${adjacent}*tan(${rad2deg(anglerad)}) = ${opposite}<br /><br />`);
 
@@ -27,8 +27,8 @@ window.onload = function()
     hypotenuse = 10;
     writeToConsole(`angle = ${rad2deg(anglerad)}°<br />`);
     writeToConsole(`hypotenuse = ${hypotenuse}<br />`);
-    opposite = hypotenuse * Math.sin(anglerad);
-    adjacent = hypotenuse * Math.cos(anglerad);
+    opposite = hypotenuse * math.sin(anglerad);
+    adjacent = hypotenuse * math.cos(anglerad);
     writeToConsole(`opposite = ${hypotenuse}*sin(${rad2deg(anglerad)}) = ${opposite}<br />`);
     writeToConsole(`adjacent = ${hypotenuse}*cos(${rad2deg(anglerad)}) = ${adjacent}<br /><br />`);
 
@@ -36,21 +36,21 @@ window.onload = function()
     hypotenuse = 10;
     writeToConsole(`opposite = ${opposite}<br />`);
     writeToConsole(`hypotenuse = ${hypotenuse}<br />`);
-    anglerad = Math.asin(opposite/hypotenuse);
+    anglerad = math.asin(opposite/hypotenuse);
     writeToConsole(`angle = asin(${opposite}/${hypotenuse}) = ${rad2deg(anglerad)}°<br /><br />`);
 
     adjacent = 8.66;
     hypotenuse = 10;
     writeToConsole(`adjacent = ${adjacent}<br />`);
     writeToConsole(`hypotenuse = ${hypotenuse}<br />`);
-    anglerad = Math.acos(adjacent/hypotenuse);
+    anglerad = math.acos(adjacent/hypotenuse);
     writeToConsole(`angle = acos(${adjacent}/${hypotenuse}) = ${rad2deg(anglerad)}°<br /><br />`);
 
     opposite = 5;
     adjacent = 8.66;
     writeToConsole(`opposite = ${opposite}<br />`);
     writeToConsole(`adjacent = ${adjacent}<br />`);
-    anglerad = Math.atan(opposite/adjacent);
+    anglerad = math.atan(opposite/adjacent);
     writeToConsole(`angle = atan(${opposite}/${adjacent}) = ${rad2deg(anglerad)}°<br /><br />`);
 }
 
